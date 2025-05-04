@@ -1,7 +1,22 @@
 import React from "react";
+import Header from "./Header";
+import usePlayNowMovies from "./hooks/usePlayNowMovies";
+import MainContainer from "./MainContainer";
+import SecondaryContainer from "./SecondaryContainer";
 
 const Browse = () => {
-  return <div>Browse</div>;
+  usePlayNowMovies();
+  return (
+    <div>
+      <Header />
+      {/* main container */}
+      {/*  - video play with title */}
+      {/* secondary container */}
+      {/* -  multiple cards * n */}
+      <MainContainer />
+      <SecondaryContainer />
+    </div>
+  );
 };
 
 export default Browse;
