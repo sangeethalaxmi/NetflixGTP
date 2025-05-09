@@ -27,4 +27,4 @@ export const AVAILABLE_LANGUAGE = [
   },
 ];
 
-export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+export const OPENAI = "dd";
