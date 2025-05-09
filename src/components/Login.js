@@ -22,7 +22,6 @@ const Login = () => {
   const email = useRef();
   const password = useRef();
   const user = useSelector((store) => store.user);
-  console.log(user);
   const handleFormSubmit = () => {
     // add validation to form and then submit form
     let errorMessage;
@@ -70,7 +69,6 @@ const Login = () => {
         })
 
         .catch((error) => {
-          console.log(error);
           const errorCode = error.code;
           const errorMessage = error.message;
           setErrorMessage(errorCode + "-" + errorMessage);

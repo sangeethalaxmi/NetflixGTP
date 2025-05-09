@@ -10,7 +10,6 @@ const usePlayNowMovies = () => {
       API_OPTIONS
     );
     const data = await movieData.json();
-    console.log(data.results);
     dispatch(addPlayNowMovie(data.results));
   };
   useEffect(() => {

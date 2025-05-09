@@ -8,7 +8,7 @@ const VideoBackground = ({ trailerId }) => {
   //   console.log(trailerVideo.key);
   useMovieTrailers(trailerId);
   return (
-    <div className="w-full aspect-video">
+    <div className="">
       <iframe
         className="w-full aspect-video"
         src={

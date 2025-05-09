@@ -3,18 +3,30 @@ import Header from "./Header";
 import usePlayNowMovies from "./hooks/usePlayNowMovies";
 import MainContainer from "./MainContainer";
 import SecondaryContainer from "./SecondaryContainer";
+import usePopularMovies from "./hooks/usePopularMovies";
+import useUpcomingMovies from "./hooks/useUpcomingMovies";
+import useTopRatedMovies from "./hooks/useTopRatedMovies";
+import GtpSearch from "./GtpSearch";
+import { useSelector } from "react-redux";
 
 const Browse = () => {
   usePlayNowMovies();
+  usePopularMovies();
+  useUpcomingMovies();
+  useTopRatedMovies();
+  const showGtpSearchBox = useSelector((state) => state.gtp.showGtpSearchBox);
   return (
     <div>
       <Header />
-      {/* main container */}
-      {/*  - video play with title */}
-      {/* secondary container */}
-      {/* -  multiple cards * n */}
-      <MainContainer />
-      <SecondaryContainer />
+      {showGtpSearchBox ? (
+        <GtpSearch />
+      ) : (
+        <>
+          {" "}
+          <MainContainer />
+          <SecondaryContainer />
+        </>
+      )}
     </div>
   );
 };
