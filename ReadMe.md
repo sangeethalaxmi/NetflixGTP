@@ -11,3 +11,22 @@
 - Firebase setup
 - Deployed app to firebase
 - create signup in firebase - authentication
+- Login to TMDB website and get access token
+- Get data for now playing movie from TMDB api
+- custom hook for NOW playing movie
+- Create movieSlice
+- Update sotre with movie data
+- Plan for primary and secondary container
+- Fetch data for trailer video
+- Update store with trailer video data
+- Embaded the youtube and made autoplay with mute
+- Tailwind classs to make main container good
+  -Build secondary container
+- Build movie list
+- Build movie cards
+- TMDB image cdn url from web search
+- Made browser page amazing with tailwind
+- create custom hook for other category movies like popular,upcoming
+  -GTP search page
+  -GTP search BAR
+  -(BONUS) multi-lang feature in gtp page with dropdown
