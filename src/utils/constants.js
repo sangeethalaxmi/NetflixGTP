@@ -27,5 +27,4 @@ export const AVAILABLE_LANGUAGE = [
   },
 ];
 
-export const OPENAI_KEY =
-  "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";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
