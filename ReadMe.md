@@ -30,3 +30,11 @@
   -GTP search page
   -GTP search BAR
   -(BONUS) multi-lang feature in gtp page with dropdown
+- openai key
+  -api call for openai
+  -fetch gtp movie from tmdb
+  -created gpt slice added data
+- reused movieList component ot display filtered movies in gtp search
+  -momoization -> adding return if store already have data
+- added .env and add .env to gitingore
+- site responsive

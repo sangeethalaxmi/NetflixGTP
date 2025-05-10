@@ -63,10 +63,10 @@ const Header = () => {
     dispatch(changeLanguage(e.target.value));
   };
   return (
-    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex justify-between">
-      <img className=" w-44" src={LOGO_URL} alt="logo"></img>
+    <div className="absolute px-8 py-2 bg-gradient-to-b from-black z-10 w-full flex md:justify-between justify-center flex-col md:flex-row">
+      <img className="mx-auto md:mx-0 w-44" src={LOGO_URL} alt="logo"></img>
       {user && (
-        <div className="p-2 flex gap-1 items-center">
+        <div className="p-2 flex gap-1 items-center justify-center md:justify-start">
           {showGtpSearchBox && (
             <select
               className="mr-2 bg-transparent text-white"

@@ -37,8 +37,8 @@ const GtpSearchBox = () => {
     // getOpenAIResult();
   };
   return (
-    <div className="pt-[10%]">
-      <div className=" bg-black w-1/2 p-4 mx-auto">
+    <div className="md:pt-[10%] pt-[50%]">
+      <div className=" bg-black md:w-1/2 w-full p-4 mx-auto">
         <form className="grid grid-cols-12">
           <input
             type="text"

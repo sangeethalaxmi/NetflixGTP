@@ -5,13 +5,17 @@ import { BACKGROUND_URL } from "../utils/constants";
 
 const GtpSearch = () => {
   return (
-    <div className="">
-      <div>
-        <img className="absolute -z-10" src={BACKGROUND_URL} alt="background" />
+    <>
+      <img
+        className="h-full fixed object-cover w-full -z-10"
+        src={BACKGROUND_URL}
+        alt="background"
+      />
+      <div className="">
+        <GtpSearchBox />
+        <GtpMovieBox />
       </div>
-      <GtpSearchBox />
-      <GtpMovieBox />
-    </div>
+    </>
   );
 };
 
